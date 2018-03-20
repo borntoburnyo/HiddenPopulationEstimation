@@ -1,3 +1,8 @@
+library("plyr")
+library("dplyr")
+library("ggplot2")
+
+
 # assume two cluters with different size and probability being captured
 # these two are major parameters to vary 
 

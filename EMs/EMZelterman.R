@@ -1,3 +1,6 @@
+library("plyr")
+library("dplyr")
+
 # Zelterman estimate with confidence interval 
 
 Zelter <- function(dat){

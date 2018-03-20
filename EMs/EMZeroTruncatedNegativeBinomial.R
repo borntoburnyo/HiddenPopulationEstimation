@@ -1,3 +1,6 @@
+library("plyr")
+library("dplyr")
+
 ### set default initial parameters 
 SIZE.INIT <- 1
 MU.INIT <- 0.5

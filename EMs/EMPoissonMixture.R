@@ -1,3 +1,5 @@
+library("plyr")
+library("dplyr")
 
 PMM_EM <- function(samples, K, lambda, pi, isdebug = FALSE) {
     # samples: (x1, x2, x3, x4, ..., xn) where xi is the count for ith person

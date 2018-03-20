@@ -1,3 +1,5 @@
+library("plyr")
+library("dplyr")
 
 ### The function "estimate_N" computes N_hat for simple Poisson 
 
