@@ -1,6 +1,7 @@
 library("plyr")
 library("dplyr")
 
+#function implementing EM alogorithm estimating two parameters of zero-truncated negative binomial distribution
 ### set default initial parameters 
 SIZE.INIT <- 1
 MU.INIT <- 0.5
@@ -163,6 +164,7 @@ ztnb.em <- function(n, size=SIZE.INIT, mu=MU.INIT)
 
 ################################################################################
 
+#function to get point estimate 
 get_ztnb <- function(dat){
   # dat in count format
   dat = unname(dat)
@@ -178,7 +180,7 @@ get_ztnb <- function(dat){
   ceiling(N_hat)
 }
 
-# functions to get point estimate and confidence interval 
+#functions to get point estimate and confidence interval 
 
 ztnb_boot <- function(N, n, clu, fre, B){
   dat <- sim_LabeledData(N, n, clu, fre)$sample %>% table()
