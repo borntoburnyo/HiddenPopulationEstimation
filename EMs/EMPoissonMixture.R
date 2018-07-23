@@ -1,6 +1,7 @@
 library("plyr")
 library("dplyr")
 
+#function implementing EM algorithm to estimate parameters for Poisson mixutre model
 PMM_EM <- function(samples, K, lambda, pi, isdebug = FALSE) {
     # samples: (x1, x2, x3, x4, ..., xn) where xi is the count for ith person
     # K is the number of clusters
@@ -43,7 +44,7 @@ PMM_EM <- function(samples, K, lambda, pi, isdebug = FALSE) {
 }
 
 
-### estimateN_PMM function estimate the population by using Poisson Mixture Model
+### estimateN_PMM function estimate the population by using parameters returned above
 
 estimateN_PMM <- function(samples, N_init, K, lambda_init, pi_init, isdebug = FALSE) {
     # samples: (x1, x2, x3, x4, ..., xn) where xi is the count for ith person
