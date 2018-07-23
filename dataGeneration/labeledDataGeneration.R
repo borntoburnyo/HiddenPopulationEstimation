@@ -1,9 +1,6 @@
-
-# Assume population falls in two cluters:
-# one being using forest frequently 
-# another being rarely use forest 
-# two clusters have different size 
-# and different probs been sampled 
+#Assume population falls in two cluters:
+#one being using forest frequently, another being rarely use forest 
+#two clusters have different size and different probabilities to be sampled 
 
 sim_LabeledData <- function(N, n, cluster.props, freq) {
     n_clusters <- length(cluster.props) # number of clusters
