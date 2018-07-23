@@ -11,8 +11,8 @@ estimate_N <- function(x, is.counts = TRUE) {
     if (!is.counts) # if the input is in the form of original data, then convert to counts
         x <- as.data.frame(table(x))$Freq
     
-    S <- sum(x) 
-    n <- length(x)
+    S <- sum(x) #total captures
+    n <- length(x)#unique captures
     
     N_hat <- n # initialize N_hat
     temp <- 0
