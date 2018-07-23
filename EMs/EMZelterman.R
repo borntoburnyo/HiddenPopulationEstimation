@@ -4,8 +4,7 @@ library("dplyr")
 # Zelterman estimate with confidence interval 
 
 Zelter <- function(dat){
-  # dat is in count format##
-  # for further bootstrap usage###
+  # dat is in count format for further bootstrap usage
   Q <- 0 # initialize the zero-class frequency
   N_hat <- 0 # initialize population size
 
