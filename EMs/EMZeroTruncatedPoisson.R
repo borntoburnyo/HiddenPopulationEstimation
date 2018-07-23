@@ -17,7 +17,7 @@ estimate_N <- function(x, is.counts = TRUE) {
     N_hat <- n # initialize N_hat
     temp <- 0
     
-    while (abs(N_hat - temp) >= 10e-5) { # iterate until the convergence of N_hat
+    while (abs(N_hat - temp) >= 1e-5) { # iterate until the convergence of N_hat
         temp <- N_hat    
         lambda_hat <- S / N_hat # compute lambda
         p0_hat <- exp(-lambda_hat) # compute p0
